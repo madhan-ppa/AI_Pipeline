@@ -56,7 +56,7 @@ cp .env.example .env
 
 # Edit .env with your API keys
 # Required:
-OPENROUTER_API_KEY=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
+OPENROUTER_API_KEY=sk-or-v1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 OPENWEATHERMAP_API_KEY=your_openweathermap_api_key_here
 
 # Optional (for evaluation):
