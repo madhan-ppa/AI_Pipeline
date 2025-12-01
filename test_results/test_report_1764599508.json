@@ -1,0 +1,47 @@
+{
+  "total_tests": 5,
+  "passed": 3,
+  "failed": 1,
+  "errors": 1,
+  "skipped": 0,
+  "duration": 1.7286324501037598,
+  "success_rate": 0.6,
+  "test_results": [
+    {
+      "test_name": "test_weather_service.py::TestWeatherService::test_get_current_weather_success",
+      "status": "passed",
+      "duration": 0.5,
+      "error": "",
+      "traceback": ""
+    },
+    {
+      "test_name": "test_pdf_service.py::TestPDFService::test_extract_text_from_pdf_success",
+      "status": "passed",
+      "duration": 0.3,
+      "error": "",
+      "traceback": ""
+    },
+    {
+      "test_name": "test_llm_service.py::TestOpenRouterLLMService::test_simple_chat_success",
+      "status": "passed",
+      "duration": 0.4,
+      "error": "",
+      "traceback": ""
+    },
+    {
+      "test_name": "test_pipeline.py::TestAIPipeline::test_process_weather_query",
+      "status": "failed",
+      "duration": 0.2,
+      "error": "Import error",
+      "traceback": ""
+    },
+    {
+      "test_name": "test_vector_service.py::TestVectorService::test_store_pdf_chunks",
+      "status": "error",
+      "duration": 0.1,
+      "error": "Connection error",
+      "traceback": ""
+    }
+  ],
+  "timestamp": "2025-12-01 20:01:48"
+}

@@ -1,0 +1,95 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>AI Pipeline Test Results</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 40px; background: #f5f5f5; }
+                .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+                h1 { color: #2c3e50; text-align: center; margin-bottom: 30px; }
+                .summary { display: flex; justify-content: space-around; margin: 30px 0; }
+                .metric { text-align: center; padding: 20px; border-radius: 8px; min-width: 120px; }
+                .metric.passed { background: #d4edda; color: #155724; }
+                .metric.failed { background: #f8d7da; color: #721c24; }
+                .metric.errors { background: #fff3cd; color: #856404; }
+                .metric.total { background: #d1ecf1; color: #0c5460; }
+                .metric-value { font-size: 2em; font-weight: bold; }
+                .metric-label { margin-top: 5px; }
+                .test-list { margin: 20px 0; }
+                .test-item { padding: 10px; margin: 5px 0; border-radius: 5px; border-left: 4px solid; }
+                .test-item.passed { background: #d4edda; border-color: #28a745; }
+                .test-item.failed { background: #f8d7da; border-color: #dc3545; }
+                .test-item.error { background: #fff3cd; border-color: #ffc107; }
+                .test-name { font-weight: bold; }
+                .test-details { margin-top: 5px; font-size: 0.9em; color: #666; }
+                .error-details { margin-top: 10px; padding: 10px; background: #f8f9fa; border-radius: 3px; font-family: monospace; font-size: 0.8em; }
+                .timestamp { text-align: center; color: #666; margin-top: 20px; }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>🧪 AI Pipeline Test Results</h1>
+                
+                <div class="summary">
+                    <div class="metric total">
+                        <div class="metric-value">5</div>
+                        <div class="metric-label">Total Tests</div>
+                    </div>
+                    <div class="metric passed">
+                        <div class="metric-value">3</div>
+                        <div class="metric-label">Passed</div>
+                    </div>
+                    <div class="metric failed">
+                        <div class="metric-value">1</div>
+                        <div class="metric-label">Failed</div>
+                    </div>
+                    <div class="metric errors">
+                        <div class="metric-value">1</div>
+                        <div class="metric-label">Errors</div>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin: 20px 0;">
+                    <strong>Success Rate: 60.0%</strong> | 
+                    <strong>Duration: 1.73s</strong>
+                </div>
+                
+                <h3>✅ Passed Tests (3)</h3><div class="test-list">
+            <div class="test-item passed">
+                <div class="test-name">test_weather_service.py::TestWeatherService::test_get_current_weather_success</div>
+                <div class="test-details">Duration: 0.500s | Status: passed</div>
+                
+            </div>
+            
+            <div class="test-item passed">
+                <div class="test-name">test_pdf_service.py::TestPDFService::test_extract_text_from_pdf_success</div>
+                <div class="test-details">Duration: 0.300s | Status: passed</div>
+                
+            </div>
+            
+            <div class="test-item passed">
+                <div class="test-name">test_llm_service.py::TestOpenRouterLLMService::test_simple_chat_success</div>
+                <div class="test-details">Duration: 0.400s | Status: passed</div>
+                
+            </div>
+            </div>
+                <h3>❌ Failed Tests (1)</h3><div class="test-list">
+            <div class="test-item failed">
+                <div class="test-name">test_pipeline.py::TestAIPipeline::test_process_weather_query</div>
+                <div class="test-details">Duration: 0.200s | Status: failed</div>
+                <div class="error-details">Import error</div>
+            </div>
+            </div>
+                <h3>⚠️ Error Tests (1)</h3><div class="test-list">
+            <div class="test-item error">
+                <div class="test-name">test_vector_service.py::TestVectorService::test_store_pdf_chunks</div>
+                <div class="test-details">Duration: 0.100s | Status: error</div>
+                <div class="error-details">Connection error</div>
+            </div>
+            </div>
+                
+                <div class="timestamp">Generated on 2025-12-01 20:01:48</div>
+            </div>
+        </body>
+        </html>
+        
